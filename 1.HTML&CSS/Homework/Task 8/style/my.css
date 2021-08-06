@@ -1,0 +1,16 @@
+img[title="цтф-пони"]{
+	width: 200px;
+	background: red;
+}
+img[title="конь-кочок"]{
+	width: 200px;
+}
+img[title="курсач"]{
+	width: 200px;
+}
+a[href="https://yandex.ua"]{
+	color: red;
+}
+a[href="https://nnm.com"]{
+	color: black;
+}

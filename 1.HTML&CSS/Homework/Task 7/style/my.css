@@ -1,0 +1,41 @@
+a:hover{
+	color:red;
+	background:yellow;
+}
+a:active{
+	color:yellow;
+	background:red;
+}
+a:link{
+	color:green;
+	background:grey;
+}
+a:visited{
+	color:grey;
+	background:green;
+}
+h1:first-letter{
+	font-size: 24px;
+	color: red;
+}
+h2:first-letter{
+	font-size: 24px;
+	color: red;
+}
+h3:first-letter{
+	font-size: 24px;
+	color: red;
+}
+.style:first-line{
+	font-style: italic;
+}
+.test:before{
+	content: "НАЧАЛО  "
+}
+.test:after{
+	content: "  КОНЕЦ"
+}
+::selection{
+	color:lightgrey;
+	background: #000;
+}

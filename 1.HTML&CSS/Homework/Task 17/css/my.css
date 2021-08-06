@@ -1,0 +1,16 @@
+p.test1{
+	background-image: url(../images/mota_ru_1042521-462.jpg);
+}
+
+.test2{
+	background: url(../images/UsKX-M06EYg.jpg) center center no-repeat blue;
+}
+
+p{
+	border: 1px solid #f22;
+}
+
+.test3{
+	max-width: 200px;
+	background-image: url(../images/himym.jpg)
+}

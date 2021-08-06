@@ -1,0 +1,11 @@
+p{
+	background: linear-gradient(to top, yellow, purple, black);
+}
+
+.one{
+	background: radial-gradient(circle, red, blue);
+}
+
+.two{
+	background: linear-gradient(45deg, #b5bdc8 0%, #828c95 36%, #28343b 100%);;
+}

@@ -1,0 +1,48 @@
+div{
+	box-sizing: border-box;
+	float: left;
+	border: 1px solid #345;
+	color: white;
+}
+
+.class1, .class7{
+	width: 100%;
+	background: rgba(255, 200, 190, 0.9);
+}
+
+.class4, .class5, .class6{
+	width: 33.3%;
+}
+
+.class2, .class3, .class4, .class5, .class6{
+	min-height: 200px;
+}
+
+.class1{
+	min-height: 100px;
+}
+.class2{
+	width: 65%;
+	background: yellow;
+}
+
+.class3{
+	width: 35%;
+	background: green;
+}
+
+.class4{
+	background: blue;
+}
+
+.class5{
+	background: black;
+}
+
+.class6{
+	background: red;
+}
+
+.class7{
+	min-height: 70px;
+}

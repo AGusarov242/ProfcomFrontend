@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flexbox</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		
+		<style>
+			@media(min-width: 768px) {
+				.main {
+					display: flex;
+					flex-direction: row;
+				}
+				.main-2 {
+					display: flex;
+					flex-direction: row;
+				}
+				.main-3 {
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-end;
+				}
+			}
+			body {
+				background: aqua;
+				padding:  0 auto;
+			}
+			.main img, .main-2 img, .main-3 img {
+				border: 1px solid #234cc2;
+				padding: 0 auto;
+			}
+			.box-1 {
+				flex: 2;
+			}
+			.box-2 {
+				flex: 2;
+			}
+			.box-3 {
+				flex: 1;
+			}
+			.box-4 {
+				flex: 1;
+			}
+			.box-5 {
+				flex: 2;
+			}
+			.box-6 {
+				flex: 1;
+			}
+			.box-7 {
+				flex: 1;
+			}
+			.box-8 {
+				flex: 1;
+			}
+			.box {
+				flex: 1;
+			}
+			ul {
+				list-style-type: none;
+			}
+			img {
+				width: 250px;
+			}
+			li {
+				overflow: hidden;
+			}
+			
+		</style>
+
+		<ul>
+			<li class="main">
+				<img class="box" src="images/1.jpg"> 
+				<img class="box" src="images/6.jpg">
+				<img class="box" src="images/3.png"> 
+				<img class="box" src="images/4.jpg"> 
+				<img class="box" src="images/5.jpg"> 
+			</li>
+
+			<li class="main-2">
+				<img class="box-1" src="images/7.png"> 
+				<img class="box-2" src="images/8.jpg">
+				<img class="box-3" src="images/9.jpg"> 
+				<img class="box-4" src="images/10.jpeg"> 
+			</li>
+
+			<li class="main-3">
+				<img class="box-5" src="images/11.jpg"> 
+				<img class="box-6" src="images/12.png">
+				<img class="box-7" src="images/13.jpg"> 
+				<img class="box-8" src="images/14.png"> 
+			</li>
+	    </ul>
+
+	</body>
+</html>

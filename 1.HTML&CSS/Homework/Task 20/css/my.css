@@ -1,0 +1,59 @@
+body{
+	padding: 60px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.button {
+	padding: 3px;
+	color: black;
+	background-color: #FF6603;
+	border: 5px solid #660034;
+	border-radius: .5em;
+	transition-property: color, background-color, border-color;
+	transition-duration: 1s, 1s, 2s;
+	transition-delay: 0, 0, 1s;
+}
+a.button:hover {
+	color: white;
+	background-color: #660034;
+	border-color: #FF6603;
+}
+
+a.button1 {
+	font: .9em Arial, Helvetica, sans-serif;
+	border-radius: .5em;
+	background-color: green;
+	border: 1px solid rgba(0,0,0,.5);
+	padding: .5em;
+	display: inline-table;
+	transition-property: color, background-color, border-color;
+}
+a.button1:hover {
+	color: black;
+	background-color: yellow;
+	border-color: #FF6603;
+	-webkit-transform: scale(1.2) rotate(12deg);
+	-ms-transform: scale(1.2) rotate(12deg);
+	transform: scale(1.2) rotate(12deg);
+}
+
+a.button2 {
+	border-radius: .5em;
+	color: lightblue;
+	background-color: purple;
+	border: 1px solid rgba(0,0,0,.5);
+	padding: .5em;
+	display: inline-table;
+	transition-property: color, background-color, border-color;
+}
+a.button2:hover {
+	color: black;
+	background-color: darkcyan;
+	border-color: #FF0000;
+	-webkit-transform: skewY(15deg) translate(40px);
+	-ms-transform: skewY(15deg) translate(40px);
+	transform: skewY(15deg) translate(40px);
+}

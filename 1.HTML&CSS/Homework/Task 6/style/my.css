@@ -1,0 +1,18 @@
+body.fon{
+	background: magenta;
+}
+p{
+	background: yellow;
+}
+.one{
+	font-weight: bold;
+}
+h1{
+	text-align: left;
+}
+h2{
+	text-align: center;
+}
+#test{
+	background: green;
+}

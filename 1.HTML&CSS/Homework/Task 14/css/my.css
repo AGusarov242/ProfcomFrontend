@@ -1,0 +1,36 @@
+body{
+	padding: 20px;
+	background: darkcyan;
+	margin: 10px 25px;
+}
+
+article{
+	color: rgb(200, 200, 200);
+	margin: 0 auto;
+}
+
+h1{
+	font-family: Arial, Helvetica, Verdana;
+	font-size: 2em;
+	text-align: center;
+	font-weight: normal;
+	line-height: 200%;
+	border: 1px dotted coral;
+}
+p{
+	font-size: 2em;
+	/*color: 	#f34;
+	background-color: #011;*/
+	border: 1px solid gold;
+}
+
+p strong{
+	border: 2px solid #612;
+	margin: 30px;
+	padding: 20px 20px 20px 20px;
+	display: table;
+}
+
+.test2{
+	margin: -10px 20px 20px 20px;
+}

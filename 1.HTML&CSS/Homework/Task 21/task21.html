@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Занятие 21</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/my.css">
+	</head>
+<body>
+	<article>
+		<h1>Кто же не любит формы</h1>
+		<form method="post" action="" class="subform">
+			<p>
+				<label for="name">Как вас зовут?</label>
+				<input type="text" name="name" id="name">
+			</p>
+			<p>
+				<label for="email">Введите вашу почту</label>
+				<input type="email" name="email" id="email">
+			</p>
+			<p>
+				<label>Выбирете как правильно клеить обои:</label>
+				<label>
+					<input type="radio" name="skill" value="1">
+					Встык
+				</label>
+				<label>
+					<input type="radio" name="skill" value="2">
+					Внахлест
+				</label>
+				<label>
+					<input type="radio" name="skill" value="3">
+					Нет мнения 
+				</label>
+			</p>
+			<p>
+				<label for="goal">Что делать если на вас напал гусь:</label>
+				<select name="goal" id="goal">
+					<option>Притвориться мертвым</option>
+					<option>Попытаться побороть его</option>
+					<option>Молиться</option>
+					<option>Щипать его в ответ</option>
+					<option>Прятать щиколотки</option>
+				</select>
+			</p>
+			<p>
+				<label for="comments">Как орел может убить козу</label>
+				<textarea name="comments" cols="40" rows="5" id="comments"></textarea>
+			</p>
+			<p>
+				<input type="submit" value="Отправить">
+			</p>
+		</form>
+	</article>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+	width: 1200px;
+	margin: 0 auto;	
+	color: rgb(0,0,0);
+	font-family: Verdana, Geneva, sans-serif;
+	padding: 60px;
+	background-image: linear-gradient(to right, green, white, red);
+	font-weight: bold;
+}
+h1{
+	font-size: 2em;
+	border-bottom: dotted 2px #000;
+	padding-bottom: 5px;
+	margin-bottom: 3px;
+}
+p{
+	margin-bottom: 20px;
+}
+.subform{
+	font-size: 1.1em;
+	color: #000;
+
+}
+.subform label{
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+	text-align: left;
+	margin-right: 10px;
+	font-weight: bold;
+}
+.subform input[type="submit"]{
+	margin-left: 315px;
+	padding: 12px 24px;
+	font-size: 1em;
+	background: rgb(0, 0, 0);
+	cursor: pointer;
+	border-radius: 4px;
+	box-shadow: 0 0 3px #fff;
+	color: #fff;
+}
+.subform input[type="radio"]{
+	margin-left:1px;
+}
+.subform input[type="text"], .subform input[type="email"], .subform textarea{
+	border-radius:4px;
+	border: none;
+	background:#fff;
+	color: red;
+	box-shadow: 0 0 3px #fff;
+	padding: 7px;
+	width: 830px;
+}
+.subform input[type="text"]:focus, .subform input[type="email"]:focus, .subform textarea:focus{
+	background: darkcyan;
+	color:#000;
+}

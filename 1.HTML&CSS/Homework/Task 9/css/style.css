@@ -1,0 +1,55 @@
+body{
+	background: rgba(13, 160, 122, 0.9); /* #2322aa   red, blue, */
+	padding: 0 25px 25px 25px; /* верх, право, низ, лево */
+	margin: 0;
+}
+article{
+	max-width: 760px;
+	margin: 0 auto;
+}
+p{
+	color: #000;
+	font-size: 1em; /* px, em, %  */
+	font-family: "Combo", Arial, Helvetica, sans-serif;
+	/* fonts.googleapis.com */
+}
+h1, h2, h3{
+	color: rgb(255, 255, 255);
+	font-family: Arial, Helvetica, serif;
+	border-bottom:2px dashed #ff3412;
+	padding-top:12px;
+	padding-bottom: 4px;
+}
+h1{
+	font-size: 2em;
+}
+#logo{
+	font-family: "Comfortaa", Palatino, serif;
+	font-size: 2em;
+	color: rgba(255, 255, 255, 0.8);
+	font-style: initial;
+	text-align: center;
+	margin-bottom: 36px;
+	background: rgb(255, 100, 100);
+	border-radius: 0 0 30px 30px; /*  верх левый, верх прав, низ прав, низ лев  */
+	padding: 24px;
+}
+#down{
+	font-family: "Comfortaa", Palatino, serif;
+	font-size: 2em;
+	color: rgba(255, 255, 255, 0.8);
+	font-style: initial;
+	text-align: center;
+	margin-bottom: 36px;
+	background: rgb(255, 100, 100);
+	border-radius: 30px 30px 30px 30px; /*  верх левый, верх прав, низ прав, низ лев  */
+	padding: 24px;
+}
+.note {
+	color: #000000;
+	border: 2px solid #f00;
+	background: rgb(69, 116, 189);
+	margin-top: 22px;
+	margin-bottom: 30px;
+	padding: 18px;
+}

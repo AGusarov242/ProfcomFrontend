@@ -1,0 +1,35 @@
+body{
+	padding: 20px;
+	background: darkcyan;
+}
+
+article{
+	color: rgb(200, 200, 200);
+}
+
+h1{
+	font-family: Arial, Helvetica, Verdana;
+	font-size: 2em;
+	text-align: center;
+	font-weight: normal;
+	line-height: 200%;
+	border: 15px solid coral;
+}
+p{
+	font-size: 2em;
+	/*color: 	#f34;
+	background-color: #011;
+	text-transform: uppercase;
+	font-variant: 	small-caps;
+	text-decoration: underline;*/
+	letter-spacing: 1px;
+	word-spacing: 3px;
+}
+#shadow{
+	text-shadow: -3px 5px 2px #999;
+}
+
+ol{
+	list-style-position: outside;
+	list-style-image: url(../img/himym.jpg);
+}

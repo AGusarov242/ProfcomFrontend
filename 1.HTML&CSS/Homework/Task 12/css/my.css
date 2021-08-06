@@ -1,0 +1,50 @@
+body{
+	padding: 20px;
+	background: darkcyan;
+}
+
+article{
+	color: rgb(200, 200, 200);
+}
+
+h1, h2{
+	font-family: Arial, Helvetica, Verdana;
+	font-size: 2em;
+	text-align: center;
+	font-weight: normal;
+}
+p{
+	font-size: 2em;
+	/*color: 	#f34;
+	background-color: #011;
+	text-transform: uppercase;
+	font-variant: 	small-caps;
+	text-decoration: underline;*/
+	letter-spacing: 1px;
+	word-spacing: 3px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline; 
+}
+
+#o{
+	font-family: 'Zen Tokyo Zoo', cursive;
+}
+#d{
+    font-family: 'Qahiri', sans-serif;
+}
+#t{
+	font-family: 'Zen Loop', cursive;
+}
+#c{
+	text-transform: uppercase;
+}
+#p{
+	text-decoration: underline;
+}
+#s{
+	letter-spacing: 3px;
+}
